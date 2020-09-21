@@ -1,0 +1,50 @@
+.main-page-my-travel {
+    height: 100vh;
+    position: relative;
+    background-image: url("../../assets/images/1894678.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: mainpage 1s ease-in-out forwards;
+    opacity: 0.3;
+}
+.main-page-text {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background-color: #3066be91;
+    padding: 10px;
+    border-radius: 3px;
+    color: white;
+}
+
+.main-page-text p {
+    font-size: 15px;
+}
+
+.main-page-text button {
+    border: none;
+    background-color: rgb(4, 45, 83);
+    color: white;
+    padding: 5px 20px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.main-page-text button:hover {
+    background-color: white;
+    color: black;
+}
+
+@keyframes mainpage {
+    from {opacity: 0.3;}
+    to {opacity:  1;}
+}
+
+@media (max-width: 420px){
+    .main-page-text {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+}

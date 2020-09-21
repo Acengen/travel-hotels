@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: rgba(0, 132, 255, 0.048);
+}

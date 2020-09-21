@@ -1,0 +1,22 @@
+.navbar-my-travel {
+    padding: 10px;
+}
+
+.navbar-my-travel a {
+    text-decoration: none;
+    padding: 5px;
+    margin: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #3066bed0;
+}
+
+.activeClass1 {
+    border-bottom: 1px solid #3066be88;
+}
+
+@media (max-width: 420px){
+    .navbar-my-travel a {
+        display: block;
+    }
+}

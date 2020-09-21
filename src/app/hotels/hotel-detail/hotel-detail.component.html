@@ -1,0 +1,10 @@
+<div class="overlay">
+    <div class="card">
+        <img [src]="hotel.image" alt="">
+        <div class="card-body">
+            <p>{{hotel.name}}</p>
+            <span>${{hotel.price}}</span>
+        </div>
+        <i (click)="goBack()" class="fa fa-caret-square-o-left"></i>
+    </div>    
+</div>

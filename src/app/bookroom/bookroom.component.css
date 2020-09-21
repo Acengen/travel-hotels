@@ -1,0 +1,63 @@
+.booking {
+    background-color: rgb(6, 57, 134);
+    padding: 10px;
+    height: 100vh;
+}
+form {
+    max-width: 600px;
+    margin: 50px auto;
+    color: white;
+}
+
+input {
+    margin-top: 5px;
+}
+
+label {
+    margin-top: 5px;
+}
+button {
+    margin-top: 10px;
+    border: none;
+    padding: 5px 15px;
+    background-color: #3066bed0;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.config-reserv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #3066be;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    animation: comeout 0.6s ease-in-out forwards;
+}
+
+.config-reserv h1 {
+    text-align: center;
+}
+
+.errormsg {
+    background-color: rgb(216, 150, 27);
+    color: white;
+    font-size: 25px;
+    padding: 20px;
+}
+.successSubmitter {
+    color:  green;
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+}
+@keyframes comeout {
+    from{opacity: 0;}
+    to {
+        opacity: 1;
+    }
+}

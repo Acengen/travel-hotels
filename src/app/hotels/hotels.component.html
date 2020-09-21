@@ -1,0 +1,10 @@
+<div class="hotels-alps">
+    <app-hotel-item *ngFor="let hotel of hotels; let i = index" [gethotel]="hotel" [id]="i"></app-hotel-item>
+</div>
+<div class="hotel-text">
+    <h1>THIS IS MOST EXCLUSIVE HOTELS ON ALPS</h1>
+    <p>If you wont to book a hotel click on this <a routerLink="/booking">LINK</a></p>
+</div>
+<div class="hotelDetail">
+    <router-outlet></router-outlet>
+</div>

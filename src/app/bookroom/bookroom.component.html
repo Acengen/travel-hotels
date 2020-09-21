@@ -1,0 +1,30 @@
+<div class="booking">
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <label>*Your name</label>
+        <input class="form-control" type="text" name="name" #name="ngModel" ngModel required>
+        <label>*Your email</label>
+        <input type="email" class="form-control" name="email" #email="ngModel" ngModel required email>
+        <label>*Your credit card number</label>
+        <input class="form-control" type="number" name="number" ngModel #number="ngModel" required minlength="12">
+        <label>*Apartman</label>
+        <select class="form-control" name="select" [ngModel]="defaultValue">
+            <option value="LE YULE HOTEL AND SPA">LE YULE HOTEL AND SPA</option>
+            <option value="HOTEL LE BLIZZARD">HOTEL LE BLIZZARD</option>
+            <option value="LE REFUGE DE SOLAISE">LE REFUGE DE SOLAISE</option>
+            <option value="LA MOURRA">LA MOURRA</option>
+            <option value="HOTEL KANDAHAR">HOTEL KANDAHAR</option>
+        </select>
+        <button (click)="onConfig()" [disabled]="!f.valid"  appButtonbooking [defaultColor]="'black'" type="button">RESERVE</button>
+        <div *ngIf="isConfigure;else null" class="config-reserv">
+            <h1>Are you sure?</h1>
+            <button type="submit">YES</button>
+            <button (click)="notConfig()" type="button">NO</button>
+        </div>
+    </form>
+    <div class="successSubmitter" *ngIf="submittersuccesfull;else null">
+        <i class="fa fa-check-circle"></i>
+    </div>
+    <div class="errormsg" *ngIf="error;else null">
+        <p>{{error}}</p>
+    </div>
+</div>
