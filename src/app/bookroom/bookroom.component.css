@@ -38,7 +38,9 @@ button {
     opacity: 0;
     animation: comeout 0.6s ease-in-out forwards;
 }
-
+.config-reserv button {
+    border: 1px solid white;
+}
 .config-reserv h1 {
     text-align: center;
 }
