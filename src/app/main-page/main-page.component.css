@@ -35,7 +35,29 @@
     background-color: white;
     color: black;
 }
+.travel-us {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #3066be;
+    -webkit-animation: roll-in-left 0.6s ease-out both;
+            animation: roll-in-left 0.6s ease-out both;
+            animation-delay: 1s;
+}
+.travel-us a {
+    color: white;
 
+}
+.travel-us:hover {
+   
+}
+.travel-us p {
+    font-size: 8px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0px;
+}
 @keyframes mainpage {
     from {opacity: 0.3;}
     to {opacity:  1;}
@@ -48,3 +70,29 @@
         width: 100%;
     }
 }
+
+@-webkit-keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+              transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes roll-in-left {
+    0% {
+      -webkit-transform: translateX(-800px) rotate(-540deg);
+              transform: translateX(-800px) rotate(-540deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+  }
+  

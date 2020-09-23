@@ -3,8 +3,9 @@
         <img [src]="hotel.image" alt="">
         <div class="card-body">
             <p>{{hotel.name}}</p>
-            <span>${{hotel.price}}</span>
+            <span>${{hotel.price}}/day</span>
+            <h2>for child -20%</h2>
         </div>
-        <i (click)="goBack()" class="fa fa-caret-square-o-left"></i>
+        <i (click)="goBack()" class="fa fa-close"></i>
     </div>    
 </div>

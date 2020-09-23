@@ -36,8 +36,13 @@ export class BookroomComponent implements OnInit {
 
   onConfig() {
     this.isConfigure = true;
+    
   }
-
+  onNav() {
+    setTimeout(()=> {
+      this.router.navigate(['/'])
+    },2000)
+  }
   notConfig() {
     this.isConfigure = false;
   }

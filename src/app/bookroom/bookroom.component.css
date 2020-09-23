@@ -57,6 +57,32 @@ button {
     text-align: center;
     font-size: 50px;
 }
+.nightlife {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    
+}
+.nightlife img {
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+}
+.nightlife .card {
+    max-width: 400px;
+}
+.nigh-awaits {
+    background-color:  rgb(255, 255, 255);
+    border-top: 5px solid #3066be;
+    border-radius: 20px;
+    padding: 10px;
+    transform: translateY(-20px);
+}
+.nigh-awaits h1 {
+    font-weight: bold;
+    color: rgb(66, 66, 66);
+    font-size: 15px;
+    text-align: center;
+}
 @keyframes comeout {
     from{opacity: 0;}
     to {

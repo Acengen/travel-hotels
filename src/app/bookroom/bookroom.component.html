@@ -2,10 +2,13 @@
     <form (ngSubmit)="onSubmit(f)" #f="ngForm">
         <label>*Your name</label>
         <input class="form-control" type="text" name="name" #name="ngModel" ngModel required>
+        <p style="color:  rgb(238, 129, 151);margin-bottom: 0px;" *ngIf="!name.valid && name.touched">Required</p>
         <label>*Your email</label>
         <input type="email" class="form-control" name="email" #email="ngModel" ngModel required email>
+        <p style="color:  rgb(238, 129, 151);margin-bottom: 0px;" *ngIf="!email.valid && email.touched">Required</p>
         <label>*Your credit card number</label>
         <input class="form-control" type="number" name="number" ngModel #number="ngModel" required minlength="12">
+        <p style="color: rgb(238, 129, 151);margin-bottom: 0px;" *ngIf="!number.valid && number.touched">Required(min lenght 12 digits)</p>
         <label>*Apartman</label>
         <select class="form-control" name="select" [ngModel]="defaultValue">
             <option value="LE YULE HOTEL AND SPA">LE YULE HOTEL AND SPA</option>
@@ -17,7 +20,7 @@
         <button (click)="onConfig()" [disabled]="!f.valid"  appButtonbooking [defaultColor]="'black'" type="button">RESERVE</button>
         <div *ngIf="isConfigure;else null" class="config-reserv">
             <h1>Are you sure?</h1>
-            <button type="submit">YES</button>
+            <button (click)="onNav()" type="submit">YES</button>
             <button (click)="notConfig()" type="button">NO</button>
         </div>
     </form>
@@ -27,4 +30,22 @@
     <div class="errormsg" *ngIf="error;else null">
         <p>{{error}}</p>
     </div>
+</div>
+
+<div class="nigh-awaits">
+    <h1>NIGHTLIFE ON ALPS</h1>
+    <div class="nightlife">
+        <a href="https://triadicevents.com/event/requiem-the-first-chapter/" target="_blank">
+             <img src="../../assets/images/folie-douce (1).jpg" alt="">
+        </a>
+        <a href="https://triadicevents.com/event/requiem-the-first-chapter/" target="_blank">
+             <img src="../../assets/images/bruck-stadl.jpg" alt="">
+        </a>
+        <a href="https://triadicevents.com/event/requiem-the-first-chapter/" target="_blank">
+             <img src="../../assets/images/Photo-Moosewirt-Singer-at-famous-Moosewirt-bar-small.jpg" alt="">
+        </a>
+        <a href="https://triadicevents.com/event/requiem-the-first-chapter/" target="_blank">
+             <img src="../../assets/images/web_zurich_tt_nightlife_haerterei_1600x900_0.jpg" alt="">
+        </a>
+     </div>
 </div>
